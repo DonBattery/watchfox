@@ -1,0 +1,35 @@
+#!/bin/bash
+
+echo WatchFox report created on $(date '+%Y/%m/%d at %H:%M:%S')
+
+echo
+
+while read HOST
+do
+
+  echo "Hostname:port ${HOST}"
+
+  ping -c 1 ${HOST%:*} &> ping
+  if [ $? = 0 ]; then
+    echo "Server OK"
+  else
+    echo "Server Error"
+  fi
+
+  curl -I -s $HOST | head -1 | grep -E "[23][0-9][0-9]" &> app
+  if [ $? = 0 ]; then
+    echo "APP OK"
+  else
+    echo "APP Error"
+  fi
+
+  HB=$(curl -s $HOST/heartbeat)
+  if [[ $HB = *"Database Status\":\"OK"* ]]; then
+    echo "Database OK"
+  else
+    echo "Database Error"
+  fi
+
+  echo
+
+done
