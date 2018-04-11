@@ -1,0 +1,80 @@
+{
+  "allert" : {
+    "email" : "mikloslorinczi.it@gmail.com",
+    "slack" : ""
+  },
+  "services" : [
+    {
+      "name" : "Testing 8080",
+      "hostname" : "localhost",
+      "port" : 8080,
+      "email_ondown" : "Yes",
+      "email_onback" : "Yes",
+      "slack_ondown" : "Yes",
+      "slack_onback" : "Yes"
+    },
+    {
+      "name" : "Testing 8080 and /heartbeat root",
+      "hostname" : "localhost/heartbeat",
+      "port" : 8080,
+      "email_ondown" : "Yes",
+      "email_onback" : "Yes",
+      "slack_ondown" : "Yes",
+      "slack_onback" : "Yes"
+    },
+    {
+      "name" : "Testing 8080 with /sajt/kamamber root",
+      "hostname" : "localhost/sajt/kamamber",
+      "port" : 8080,
+      "email_ondown" : "Yes",
+      "email_onback" : "Yes",
+      "slack_ondown" : "Yes",
+      "slack_onback" : "Yes"
+    },
+    {
+      "name" : "Testing 1212",
+      "hostname" : "localhost",
+      "port" : 1212,
+      "email_ondown" : "Yes",
+      "email_onback" : "Yes",
+      "slack_ondown" : "Yes",
+      "slack_onback" : "Yes"
+    },
+    {
+      "name" : "Testing 0",
+      "hostname" : "localhost",
+      "port" : 0,
+      "email_ondown" : "Yes",
+      "email_onback" : "Yes",
+      "slack_ondown" : "Yes",
+      "slack_onback" : "Yes"
+    },
+    {
+      "name" : "google.com with -1",
+      "hostname" : "google.com",
+      "port" : -1,
+      "email_ondown" : "Yes",
+      "email_onback" : "Yes",
+      "slack_ondown" : "Yes",
+      "slack_onback" : "Yes"
+    },  
+    {
+      "name" : "Testing 8098",
+      "hostname" : "localhost",
+      "port" : 8098,
+      "email_ondown" : "Yes",
+      "email_onback" : "Yes",
+      "slack_ondown" : "Yes",
+      "slack_onback" : "Yes"
+    },
+    {
+      "name" : "index.hu",
+      "hostname" : "index.hu",
+      "port" : 80,
+      "email_ondown" : "Yes",
+      "email_onback" : "Yes",
+      "slack_ondown" : "Yes",
+      "slack_onback" : "Yes"
+    }
+  ]
+}
