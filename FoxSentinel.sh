@@ -7,11 +7,6 @@ echo
 while read HOST
 do
 
-  SERVER=""
-  APP=""
-  HEART=""
-
-
   ping -c 1 ${HOST%:*} &> dump
   if [ $? = 0 ]; then
     SERVER="Server OK"
@@ -37,7 +32,9 @@ do
   echo $SERVER
   echo $APP
   echo $HEART
-  echo $SERVER $APP $HEART >> ./services/$(echo $HOST | sed 's/[:/]//g')
   echo
+
+  # Appending statusfile of the service
+  echo $(date '+%Y/%m/%d %H:%M:%S') $SERVER $APP $HEART >> ./services/$(echo $HOST | sed 's/[:/]//g')
 
 done
