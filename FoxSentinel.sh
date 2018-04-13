@@ -7,7 +7,7 @@ echo
 while read HOST
 do
 
-  ping -c 1 ${HOST%:*} &> dump
+  ping -c 1 `echo $HOST | cut -f1 -d":" | cut -f1 -d"/"` &> dump
   if [ $? = 0 ]; then
     SERVER="Server OK"
   else
