@@ -37,4 +37,7 @@ do
   # Appending statusfile of the service
   echo $(date '+%Y/%m/%d %H:%M:%S') $SERVER $APP $HEART >> ./services/$(echo $HOST | sed 's/[:/]//g')
 
+  # Cleaning up
+  echo "" > dump; rm dump
+
 done
