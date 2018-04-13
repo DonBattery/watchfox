@@ -72,9 +72,9 @@ creates HTML report
 
 this small script accepts 5 parameters:\
 $1 recipiant email addres\
-$2 service
-$3 Server status
-$4 APP status
-$5 Database status
+$2 service\
+$3 Server status\
+$4 APP status\
+$5 Database status\
 
 creats an **allert_email** file and sends it with **msmtp**
