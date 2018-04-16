@@ -81,12 +81,16 @@ body {
   font-weight: bold;
 }
 
-.statusOK {
+.OK {
   background-color: rgb(123, 230, 16)
 }
 
-.statusError {
+.Error {
   background-color: rgb(241, 48, 14);
+}
+
+.unknown {
+  background-color: rgb(7, 146, 111);
 }
 
 @media screen and (max-width: 899px) {

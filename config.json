@@ -1,4 +1,5 @@
 {
+  "site" : "localhost:7373",
   "allert" : {
     "email" : "mikloslorinczi.it@gmail.com",
     "slack" : ""
@@ -24,6 +25,13 @@
       "port" : 8080,
       "email" : "Yes",
       "slack" : "Yes"
-    }    
+    },    
+    {
+      "name" : "Testing kamu/sajt",
+      "hostname" : "kamu/sajt/halál",
+      "port" : 8080,
+      "email" : "Yes",
+      "slack" : "Yes"
+    }  
   ]
 }
