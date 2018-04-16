@@ -12,15 +12,15 @@ WatchFox not just logs the status of the services, but also can allert via Email
 
 ## Main parts
 
-[config.json](docs/config.md "The configuration file")
+[config.json](docs/config.md "The configuration file")\
 
-[WatchFox](docs/WatchFox.md "The main wrapper")
-[FoxSentinel](docs/FoxSentinel.md "Status checker and logger")
-[FoxMessenger](docs/FoxMessenger.md "Status change detection and allerting")
-[FoxReporter](docs/FoxReporter.md "HTML report creator")
+[WatchFox](docs/WatchFox.md "The main wrapper")\
+[FoxSentinel](docs/FoxSentinel.md "Status checker and logger")\
+[FoxMessenger](docs/FoxMessenger.md "Status change detection and allerting")\
+[FoxReporter](docs/FoxReporter.md "HTML report creator")\
 
 ## Other scripts
 
-[config_parser](docs/config_parser.md "parse config.json")
-[SendEmail](docs/SendEmail.md "simple Email sender")
-[bot_say](docs/bot_say.md "simple Slack message sender")
+[config_parser](docs/config_parser.md "parse config.json")\
+[SendEmail](docs/SendEmail.md "simple Email sender")\
+[bot_say](docs/bot_say.md "simple Slack message sender")\
