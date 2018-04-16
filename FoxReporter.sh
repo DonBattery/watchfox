@@ -2,7 +2,6 @@
 
 function write_data {
   echo "{ name : \"$1\", url : \"$2\", server : \"$3\", app : \"$4\", db : \"$5\"}," >> ./www/data.js
-  echo "{ name : \"$1\", url : \"$2\", server : \"$3\", app : \"$4\", db : \"$5\"},"
 }
 
 DATE_MESSAGE="WatchFox report created on $(date '+%Y/%m/%d at %H:%M:%S')"

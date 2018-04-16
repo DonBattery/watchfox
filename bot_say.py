@@ -13,15 +13,11 @@ green = "#52f23a"
 def slack_allert(color, message):
     sc.api_call(
         'chat.postMessage',
-        channel='cli_bot_channel',
-        attachments= [
-                {
-                    "color": color,
-                    "title": ":watchfox: WatchFox Allert",
-                    "text": message,
-                }
-          ]
-    )
+        channel="cli_bot_channel",
+        attachments= [{
+            "color": color,
+            "title": ":watchfox: WatchFox Allert",
+            "text": message }])
 
 if sys.argv[1] in ['-r', '-R']:
     color = red
