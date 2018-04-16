@@ -96,22 +96,15 @@ do
             ALLERT_COLOR="-g"
           fi
 
-echo "Allert Text"
-echo $ALLERT_TEXT
-
 read -r -d '' SLACK_MESSAGE << OEM
 Service `python3 config_parser.py name "$HOST" < config.json`
 URL      $HOST
 $ALLERT_TEXT
 OEM
-          echo ------------------------SLACK--------------------------
-          echo "SLACK MESSAGE"
-          echo "$SLACK_MESSAGE"
+
           echo "$SLACK_MESSAGE" > slack_message
           sed -i -- 's/:)/:grin:/g' slack_message
           sed -i -- 's/:(/:sweat:/g' slack_message
-          echo "After SED"
-          cat slack_message
           . setslack.sh
           python bot_say.py "$ALLERT_COLOR" "`cat slack_message`"
           echo > slack_message
