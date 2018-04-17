@@ -1,0 +1,32 @@
+{
+  "name": "watchfox",
+  "version": "1.0.0",
+  "description": "web-application monitoring with bash scripts",
+  "main": "ReportingServer.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ReportingServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonBattery/watchfox.git"
+  },
+  "author": "Crystalpig Conclave",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DonBattery/watchfox/issues"
+  },
+  "homepage": "https://github.com/DonBattery/watchfox#readme",
+  "dependencies": {
+    "endpointz": "^1.0.2",
+    "express": "^4.16.3",
+    "huli-db": "^1.0.1",
+    "huli-env": "^1.0.1",
+    "huli-hb": "^1.0.0",
+    "mysql": "^2.15.0",
+    "sql-bricks": "^2.0.3"
+  }
+}

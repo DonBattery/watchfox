@@ -6,32 +6,39 @@
   },
   "services" : [
     {
-      "name" : "Testing 8080",
+      "name" : "Heartbeat 1",
       "hostname" : "localhost",
       "port" : 8080,
       "email" : "Yes",
       "slack" : "Yes"
     },
     {
-      "name" : "Testing gmail.com",
+      "name" : "Gmail",
       "hostname" : "gmail.com",
       "port" : 0,
       "email" : "Yes",
       "slack" : "Yes"
     },
     {
-      "name" : "Testing kamu",
-      "hostname" : "kamu",
+      "name" : "Kamu Teszt",
+      "hostname" : "kamu/sajt",
       "port" : 8080,
       "email" : "Yes",
       "slack" : "Yes"
-    },    
+    },
     {
-      "name" : "Testing kamu/sajt",
-      "hostname" : "kamu/sajt/halál",
-      "port" : 8080,
+      "name" : "Heartbeat 2",
+      "hostname" : "localhost",
+      "port" : 9090,
       "email" : "Yes",
       "slack" : "Yes"
-    }  
+    },
+    {
+      "name" : "Heartbeat 3",
+      "hostname" : "localhost",
+      "port" : 9393,
+      "email" : "Yes",
+      "slack" : "Yes"
+    }
   ]
 }
