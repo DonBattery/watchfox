@@ -15,10 +15,6 @@ app.use(hb.endpoint);
 
 app.use(express.static('www'));
 
-app.get('/', (req, res) => {
-  res.send('App reporting in');
-});
-
 app.get('/ping', (req, res) => {
   res.send('pong');
 });
