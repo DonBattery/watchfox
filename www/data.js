@@ -1,4 +1,4 @@
-const statusData = { timeStamp : "WatchFox report created on 2018/04/17 at 13:02:57", services : [
+const statusData = { timeStamp : "WatchFox report created on 2018/04/17 at 13:15:50", services : [
 { name : "Heartbeat 1", url : "localhost:8080", server : "Server OK", app : "APP OK", db : "Database OK"},
 { name : "Gmail", url : "gmail.com", server : "Server OK", app : "APP OK", db : "Database Error"},
 { name : "Kamu Teszt", url : "kamu:8080/sajt", server : "Server Error", app : "APP Error", db : "Database Error"},
