@@ -1,10 +1,16 @@
 #!/bin/bash
 
+if ! [ -f mytokens.env ]; then
+  ./Setup.sh
+fi
+
 echo
 echo "starting WatchFox ..."
 echo
 
 nodejs ReportingServer.js &
+sleep 1s
+echo
 
 source mytokens.env
 export SLACK_API_TOKEN=$SLACK_API_TOKEN

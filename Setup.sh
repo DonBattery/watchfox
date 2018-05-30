@@ -9,7 +9,7 @@ echo "can use those channels to allert you, when"
 echo "changes occure in the status of monitored WebApps"
 echo
 echo -e "Your settings are stored in \e[1mmytokens.env\e[0m"
-echo "it can be edited manually or by (re)running this script"
+echo "it can be edited manually or by running Setup.sh"
 echo
 read -p "Service Email address >" SERVICE_MAIL
 read -p "Service Email password >" SERVICE_MAIL_PASS

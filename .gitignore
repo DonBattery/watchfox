@@ -3,3 +3,4 @@ node_modules
 mytokens.env
 services
 !services/services.md
+logfile

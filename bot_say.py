@@ -2,10 +2,14 @@
 
 import os
 import sys
-from slackclient import SlackClient
 
-slack_token = os.environ['SLACK_API_TOKEN']
-sc = SlackClient(slack_token)
+try:
+    slack_token = os.environ['SLACK_API_TOKEN']
+    from slackclient import SlackClient
+    sc = SlackClient(slack_token)
+except Exception as e:
+    print('Slack error\n', e)
+    sys.exit(1)
 
 red = "#f7520c"
 green = "#52f23a"
@@ -26,3 +30,4 @@ if sys.argv[1] in ['-g', '-G']:
     color = green
 
 slack_allert(color, sys.argv[2])
+sys.exit(0)
