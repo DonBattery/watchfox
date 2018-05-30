@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This script populates the statusData object in www/data.js
+# wich will be rendered to the FoxSentinel report webpage
+
 function write_data {
   echo "{ name : \"$1\", url : \"$2\", server : \"$3\", app : \"$4\", db : \"$5\"}," >> ./www/data.js
 }

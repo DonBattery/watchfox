@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Run Setup.sh if mytokens.env does not exists 
 if ! [ -f mytokens.env ]; then
   ./Setup.sh
 fi
@@ -8,14 +9,17 @@ echo
 echo "starting WatchFox ..."
 echo
 
+# Start serving the WatchFox report webpage on 8080
 nodejs ReportingServer.js &
 sleep 1s
 echo
 
+# Setup environment variables
 source mytokens.env
 export SLACK_API_TOKEN=$SLACK_API_TOKEN
 export SLACK_CHANNEL=`python3 config_parser.py slack < config.json`
 
+# Setup msmtp Email service
 cat > ~/.msmtprc <<EOF
 account default
 host smtp.gmail.com
@@ -30,6 +34,7 @@ password ${SERVICE_MAIL_PASS}
 logfile ~/.msmtp
 EOF
 
+# Mainloop
 while :
 do
   python3 config_parser.py services < config.json | ./FoxSentinel.sh 2>&1 | tee -a logfile
