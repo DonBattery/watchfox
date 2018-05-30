@@ -21,12 +21,6 @@
   },
   "homepage": "https://github.com/DonBattery/watchfox#readme",
   "dependencies": {
-    "endpointz": "^1.0.2",
-    "express": "^4.16.3",
-    "huli-db": "^1.0.1",
-    "huli-env": "^1.0.1",
-    "huli-hb": "^1.0.0",
-    "mysql": "^2.15.0",
-    "sql-bricks": "^2.0.3"
+    "express": "^4.16.3"
   }
 }

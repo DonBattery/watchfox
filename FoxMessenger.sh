@@ -105,7 +105,6 @@ OEM
           echo "$SLACK_MESSAGE" > slack_message
           sed -i -- 's/:)/:grin:/g' slack_message
           sed -i -- 's/:(/:sweat:/g' slack_message
-          . /bin/setslack.sh
           python bot_say.py "$ALLERT_COLOR" "`cat slack_message`"
           echo > slack_message
           rm slack_message
