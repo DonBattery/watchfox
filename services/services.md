@@ -1,1 +1,1 @@
-# Here goes the individual logfile for every observed WebApp
+### Here goes the individual logfile for every observed WebApp
