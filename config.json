@@ -2,13 +2,13 @@
   "site" : "localhost:7373",
   "allert" : {
     "email" : "mikloslorinczi.it@gmail.com",
-    "slack" : ""
+    "slack_channel" : "cli_bot_channel"
   },
   "services" : [
     {
-      "name" : "Heartbeat 1",
+      "name" : "MyService",
       "hostname" : "localhost",
-      "port" : 7575,
+      "port" : 9090,
       "email" : "Yes",
       "slack" : "Yes"
     },
@@ -16,34 +16,6 @@
       "name" : "Gmail",
       "hostname" : "gmail.com",
       "port" : 0,
-      "email" : "Yes",
-      "slack" : "Yes"
-    },
-    {
-      "name" : "Kamu Teszt",
-      "hostname" : "kamu/sajt",
-      "port" : 8080,
-      "email" : "Yes",
-      "slack" : "Yes"
-    },
-    {
-      "name" : "Heartbeat 2",
-      "hostname" : "localhost",
-      "port" : 9091,
-      "email" : "Yes",
-      "slack" : "Yes"
-    },
-    {
-      "name" : "Heartbeat 3",
-      "hostname" : "localhost",
-      "port" : 7979,
-      "email" : "Yes",
-      "slack" : "Yes"
-    },
-    {
-      "name" : "Jenkins on Edward",
-      "hostname" : "195.228.147.126",
-      "port" : 9090,
       "email" : "Yes",
       "slack" : "Yes"
     }

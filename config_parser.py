@@ -22,6 +22,9 @@ if sys.argv[1] == 'site':
 if sys.argv[1] == 'email':
     print(config['allert']['email'])
 
+if sys.argv[1] == 'slack':
+    print(config['allert']['slack_channel'])
+
 if sys.argv[1] == 'services':
     for service in config['services']:
         print(service_to_URL(service))

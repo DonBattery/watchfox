@@ -13,7 +13,7 @@ green = "#52f23a"
 def slack_allert(color, message):
     sc.api_call(
         'chat.postMessage',
-        channel="cli_bot_channel",
+        channel=os.environ['SLACK_CHANNEL'],
         attachments= [{
             "color": color,
             "title": ":watchfox: WatchFox Allert",

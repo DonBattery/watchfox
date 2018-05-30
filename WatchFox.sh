@@ -4,8 +4,11 @@ echo
 echo "starting WatchFox ..."
 echo
 
+nodejs ReportingServer.js &
+
 source mytokens.env
 export SLACK_API_TOKEN=$SLACK_API_TOKEN
+export SLACK_CHANNEL=`python3 config_parser.py slack < config.json`
 
 cat > ~/.msmtprc <<EOF
 account default
