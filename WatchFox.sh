@@ -1,15 +1,28 @@
 #!/bin/bash
 
-# Run Setup.sh if mytokens.env does not exists 
-if ! [ -f mytokens.env ]; then
-  ./Setup.sh
-fi
-
 echo
 echo "starting WatchFox ..."
 echo
 
-# Start serving the WatchFox report webpage on 8080
+# Run Setup.sh if mytokens.env does not exists 
+if [ ! -f mytokens.env ]; then
+  echo
+  echo "No service credentials has found, running Setup.sh ..."
+  echo
+  ./Setup.sh
+fi
+
+# Start serving the WatchFox report webpage on the 8080 PORT
+echo
+echo "Starting WatchFox report webserver..."
+echo
+if [ ! -d node_modules ]; then
+  echo
+  echo "Cannot find node_modules, running npm install"
+  echo
+  npm install
+  echo
+fi
 nodejs ReportingServer.js &
 sleep 1s
 echo
