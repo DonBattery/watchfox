@@ -23,6 +23,6 @@ Prints out every service by URL
 Gives back a service name based on its URL
 
 **python3 config_parser.py allert URL < config.json**\
-Gives us a line similar to this:
-Email Y Slack Y
+Gives us a line similar to this:\
+Email Y Slack Y\
 based on the given service's (identified by URL) allerting setup
