@@ -4,3 +4,4 @@ mytokens.env
 services
 !services/services.md
 logfile
+www/data.js
