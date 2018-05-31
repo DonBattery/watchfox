@@ -6,7 +6,7 @@ first **ping** the host (if possible)
 
 then it tries to call **curl** on host:port (looking for 200-399 HTTP Status)
 
-finally it tries to call **curl** on host:port/heartbeat (looking for "Database: OK" in response)
+finally it tries to call **curl** on host:port/rout/heartbeat (looking for "Database: OK" in response)
 
 The scrpit will display a report with timestamp and the result of every test. (by default WatchFox channels this report to the **logfile**) For every service also an individual file will be created under the **./services/** folder containing the timestamp and the status reports associated with the service. Other scrits (FoxMessenger, FoxReporter) can work with these files.
 
