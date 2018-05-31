@@ -28,7 +28,7 @@ with **init_watchfox.sh**
 
 ## Other scripts
 
-[Setup](docs/Setup.md "sets up service credentials")
+[Setup](docs/Setup.md "sets up service credentials")\
 [config_parser](docs/config_parser.md "parse config.json")\
 [SendEmail](docs/SendEmail.md "simple Email sender")\
 [bot_say](docs/bot_say.md "simple Slack message sender")\
