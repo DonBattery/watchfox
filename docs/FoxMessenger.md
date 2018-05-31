@@ -11,5 +11,5 @@ echo "host:port/root" | ./FoxMessenger.sh
 
 with the config file
 ```SHELL
-python3 config_parser.py -s < config.json | ./FoxMessenger.sh
+python3 config_parser.py services < config.json | ./FoxMessenger.sh
 ```
