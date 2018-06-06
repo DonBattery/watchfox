@@ -27,3 +27,5 @@ This is the only configuration file you need to edit manually:
   ]
 }
 ```
+
+**site** will be later used (this information can be attached to Emails and Slack messages so users can easily navigate to the reporting site) Right now it is ignored.
